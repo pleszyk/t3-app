@@ -88,7 +88,7 @@ const CountrySearch = () => {
                       borders={country.borders || []}
                       flag={{
                         png: country.flags.png,
-                        alt: country.flags.alt || `Flag of ${country.name.common}`
+                        alt: country.flags.alt ?? `Flag of ${country.name.common}`
                       }}
                   />
               ))}
